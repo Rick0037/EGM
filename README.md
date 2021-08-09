@@ -18,8 +18,8 @@ Create an EGM object to solve the toy problem.
 Or specify a new problem to be solved, which should be defined in folder *Plant/*.
 
 -----------------------------------
-egm  = EGM();
-egm = EGM('new_problem');
+egm  = EGM();  
+egm = EGM('new_problem');  
 
 -----------------------------------
 
@@ -29,8 +29,8 @@ Or run several rounds.
 The first group of vertices in the sapce (a simplex including N+1 vertices with N variables) will evolve with the help of EGM which makes a balance of exploration and exploit.
 
 -----------------------------------
-egm.go; % To run 1 round.
-egm.go(10); % To run 10 rounds.
+egm.go; % To run 1 round.  
+egm.go(10); % To run 10 rounds.  
 
 -----------------------------------
 
@@ -40,8 +40,8 @@ Print the information of the best vertex after the latest round.
 Print the information of several best vertices after a certain round.
 
 -----------------------------------
-egm.best_vertex;
-egm.best_vertices(num_th_round, num_best_vertices);
+egm.best_vertex;  
+egm.best_vertices(num_th_round, num_best_vertices);  
 
 -----------------------------------
 
@@ -49,7 +49,7 @@ egm.best_vertices(num_th_round, num_best_vertices);
 Visualize the learning curve of cost function. 
 
 -----------------------------------
-egm.learningCurve;
+egm.learningCurve;  
 
 -----------------------------------
 
@@ -69,7 +69,7 @@ egm.controlLandscape;
 Print and save the current figure.
 
 -----------------------------------
-egm.printFigure('Name_of_Figure');
+egm.printFigure('Name_of_Figure');  
 
 -----------------------------------
 
@@ -80,20 +80,20 @@ For more details(like parameters about the problem), see *default_parameters.m*.
 
 -----------------------------------
 % Gradient_simplex parameters
-simplexMirrorStep = 1;
-simplexContractStep = 0.5;
-simplexExpandStep = 2;
-simplexShrinkStep = 1/2;
-simplexParam = ...
-[simplexMirrorStep simplexContractStep simplexExpandStep simplexShrinkStep];
-parameters.simplexParam = simplexParam; 
-parameters.simplexSize = parameters.inputDimen + 1; % The simplex size is related to the problem, see *default_parameters.m*.
-parameters.gradient_Nstep = 1;   
+simplexMirrorStep = 1;  
+simplexContractStep = 0.5;  
+simplexExpandStep = 2;  
+simplexShrinkStep = 1/2;  
+simplexParam = ...  
+[simplexMirrorStep simplexContractStep simplexExpandStep simplexShrinkStep];  
+parameters.simplexParam = simplexParam;   
+parameters.simplexSize = parameters.inputDimen + 1; % The simplex size is related to the problem, see *default_parameters.m*.  
+parameters.gradient_Nstep = 1;       
     
-% Exploration_sample parameters                         
-parameters.sampleSetSize = 1e3;
-parameters.punishCost = 10;
-parameters.exploration_Nstep = 1;  
+% Exploration_sample parameters                           
+parameters.sampleSetSize = 1e3;  
+parameters.punishCost = 10;  
+parameters.exploration_Nstep = 1;    
 
 -----------------------------------
 
@@ -105,21 +105,21 @@ If not given, the EGM object is saved as 'EGM'.
 For more details, see CheatSheet.m.
 
 -----------------------------------
-egm.save_results;
-egm.load_obj('Name_of_Run');
+egm.save_results;  
+egm.load_obj('Name_of_Run');  
 
 -----------------------------------
 
 ### Content
 
 The main folder should contain the following folders and files:
-- *README.md*
-- *Initialization.m* is a script to initialize.
-- *Restart.m* is a script to restart the optimization.
-- *@EGM/*, *@Esample/*, *@Gsimplex/*, *@Mtable/* defines the objects in EGM algorithm.
-- *Tools/* contains functions and files not used by the EGM class objects.
-- *Plant/* contains the problems and parameters.
-- *save_runs/* contains the saved EGM object and figures.
+- *README.md*  
+- *Initialization.m* is a script to initialize.  
+- *Restart.m* is a script to restart the optimization.  
+- *@EGM/*, *@Esample/*, *@Gsimplex/*, *@Mtable/* defines the objects in EGM algorithm.  
+- *Tools/* contains functions and files not used by the EGM class objects.  
+- *Plant/* contains the problems and parameters.  
+- *save_runs/* contains the saved EGM object and figures.  
 
 
 
