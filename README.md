@@ -110,5 +110,4 @@ egm.load_obj('Name_of_Run');
 ### 6.示例
 
 二维梯度优化及学习过程  
-![untitled](https://user-images.githubusercontent.com/86883267/129221235-e95238a4-50b9-47f0-b1ce-5599a2c20bb2.png)  
-![untitled](https://user-images.githubusercontent.com/86883267/129221298-7e41de28-23c0-427c-8c78-e76cc26b4e64.png)  
+![untitled2](https://user-images.githubusercontent.com/86883267/129221550-eb6565b6-848c-40b7-be8d-3d942588d917.png)![untitled](https://user-images.githubusercontent.com/86883267/129221298-7e41de28-23c0-427c-8c78-e76cc26b4e64.png)  
