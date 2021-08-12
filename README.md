@@ -105,5 +105,10 @@ egm.load_obj('Name_of_Run');
 - *Plant/* 包含我们要解决的问题的定义的参数 。  
 - *save_runs/* 图片和工作区的保存地点。   
 
-示例文件可见Example.md
 如有建议及bug欢迎联系19s053048@stu.hit.edu.cn
+
+### 6.示例
+
+二维梯度优化及学习过程  
+![untitled](https://user-images.githubusercontent.com/86883267/129221235-e95238a4-50b9-47f0-b1ce-5599a2c20bb2.png)  
+![untitled](https://user-images.githubusercontent.com/86883267/129221298-7e41de28-23c0-427c-8c78-e76cc26b4e64.png)  
