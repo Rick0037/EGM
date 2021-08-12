@@ -104,3 +104,6 @@ egm.load_obj('Name_of_Run');
 - *Tools/* 包含EGM类对象未使用的函数和文件。   
 - *Plant/* 包含我们要解决的问题的定义的参数 。  
 - *save_runs/* 图片和工作区的保存地点。   
+
+示例文件可见Example.md
+如有建议及bug欢迎联系19s053048@stu.hit.edu.cn
